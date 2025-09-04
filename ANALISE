@@ -131,6 +131,7 @@
             text-align: right;
             font-weight: 600;
             color: #2d3748;
+            white-space: nowrap;
         }
         
         .positive {
@@ -166,6 +167,12 @@
         
         .total-row td {
             border-bottom: none;
+        }
+
+        .profit-table {
+            table-layout: fixed;
+            width: 100%;
+            -webkit-print-color-adjust: exact;
         }
         
         .page-break {
@@ -812,3 +819,63 @@
     <td class="center">2022</td>
     <td>-</td>
 </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">6. Apuração de Lucro</h2>
+            <table class="profit-table">
+                <colgroup>
+                    <col style="width:12%">
+                    <col style="width:22%">
+                    <col style="width:26%">
+                    <col style="width:12%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Lucro</th>
+                        <th>Faturamento</th>
+                        <th>Margem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021</td>
+                        <td class="currency">R$ 1.000,00</td>
+                        <td class="currency">R$ 142.500,00</td>
+                        <td class="currency">0,70%</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td class="currency">R$ 19.853,00</td>
+                        <td class="currency">R$ 1.955.212,00</td>
+                        <td class="currency">1,02%</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td class="currency">R$ 54.230,00</td>
+                        <td class="currency">R$ 5.863.831,56</td>
+                        <td class="currency">0,92%</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td class="currency">R$ 202.015,00</td>
+                        <td class="currency">R$ 13.795.050,67</td>
+                        <td class="currency">1,46%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="total-row">
+                        <td>Total</td>
+                        <td class="currency">R$ 277.098,00</td>
+                        <td class="currency">R$ 21.756.594,23</td>
+                        <td class="currency">1,27%</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </body>
+</html>
